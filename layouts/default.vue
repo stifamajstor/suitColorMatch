@@ -5,9 +5,9 @@
         <div class="flex h-16 justify-between items-center">
           <!-- Logo/Brand -->
           <div class="flex-shrink-0">
-            <h1 class="text-xl font-bold text-primary">
+            <NuxtLink to="/" class="text-xl font-bold text-primary hover:text-primary-600 transition-colors">
               SuitColorMatch
-            </h1>
+            </NuxtLink>
           </div>
 
           <!-- Navigation Links -->
@@ -15,6 +15,15 @@
             <div class="flex items-center space-x-4">
               <UButton to="/" variant="ghost" color="neutral">
                 Home
+              </UButton>
+              <UButton to="/app" variant="ghost" color="neutral">
+                Color Matcher
+              </UButton>
+              <UButton to="/guide" variant="ghost" color="neutral">
+                Style Guide
+              </UButton>
+              <UButton to="/examples" variant="ghost" color="neutral">
+                Examples
               </UButton>
               <UButton to="/about" variant="ghost" color="neutral">
                 About
@@ -44,6 +53,15 @@
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <UButton to="/" variant="ghost" color="neutral" class="w-full justify-start">
               Home
+            </UButton>
+            <UButton to="/app" variant="ghost" color="neutral" class="w-full justify-start">
+              Color Matcher
+            </UButton>
+            <UButton to="/guide" variant="ghost" color="neutral" class="w-full justify-start">
+              Style Guide
+            </UButton>
+            <UButton to="/examples" variant="ghost" color="neutral" class="w-full justify-start">
+              Examples
             </UButton>
             <UButton to="/about" variant="ghost" color="neutral" class="w-full justify-start">
               About
