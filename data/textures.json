@@ -1,0 +1,295 @@
+{
+  "textures": {
+    "solid": {
+      "id": "solid",
+      "name": "Solid",
+      "description": "Smooth, uniform fabric texture without patterns",
+      "formality": 10,
+      "versatility": 10,
+      "occasions": ["business_professional", "formal_evening", "creative_professional", "social_casual"],
+      "seasonality": ["all"],
+      "svg": {
+        "pattern": "<pattern id='solid' width='100' height='100' patternUnits='userSpaceOnUse'><rect width='100' height='100' fill='{{color}}'/></pattern>",
+        "usage": "<rect fill='url(#solid)' width='100%' height='100%'/>",
+        "variables": ["color"]
+      },
+      "fabricTypes": ["wool", "cotton", "linen", "silk", "polyester"],
+      "maintenance": "low",
+      "durability": "high"
+    },
+    "pinstripe": {
+      "id": "pinstripe",
+      "name": "Pinstripe",
+      "description": "Thin vertical stripes, classic business pattern",
+      "formality": 9,
+      "versatility": 8,
+      "occasions": ["business_professional", "formal_evening"],
+      "seasonality": ["all"],
+      "svg": {
+        "pattern": "<pattern id='pinstripe' width='8' height='100' patternUnits='userSpaceOnUse'><rect width='8' height='100' fill='{{baseColor}}'/><rect x='6' width='1' height='100' fill='{{stripeColor}}'/></pattern>",
+        "usage": "<rect fill='url(#pinstripe)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "stripeColor"]
+      },
+      "variants": {
+        "narrow": {
+          "description": "Very thin stripes, 1-2mm spacing",
+          "pattern": "<pattern id='pinstripe-narrow' width='4' height='100' patternUnits='userSpaceOnUse'><rect width='4' height='100' fill='{{baseColor}}'/><rect x='3' width='0.5' height='100' fill='{{stripeColor}}'/></pattern>",
+          "formality": 10
+        },
+        "wide": {
+          "description": "Wider stripes, 4-6mm spacing",
+          "pattern": "<pattern id='pinstripe-wide' width='12' height='100' patternUnits='userSpaceOnUse'><rect width='12' height='100' fill='{{baseColor}}'/><rect x='10' width='2' height='100' fill='{{stripeColor}}'/></pattern>",
+          "formality": 7
+        }
+      },
+      "fabricTypes": ["wool", "wool-blend"],
+      "maintenance": "medium",
+      "durability": "high"
+    },
+    "windowpane": {
+      "id": "windowpane",
+      "name": "Windowpane",
+      "description": "Large rectangular grid pattern resembling window panes",
+      "formality": 7,
+      "versatility": 6,
+      "occasions": ["business_professional", "creative_professional"],
+      "seasonality": ["fall", "winter", "spring"],
+      "svg": {
+        "pattern": "<pattern id='windowpane' width='40' height='40' patternUnits='userSpaceOnUse'><rect width='40' height='40' fill='{{baseColor}}'/><rect x='0' y='38' width='40' height='2' fill='{{gridColor}}'/><rect x='38' y='0' width='2' height='40' fill='{{gridColor}}'/></pattern>",
+        "usage": "<rect fill='url(#windowpane)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "gridColor"]
+      },
+      "variants": {
+        "large": {
+          "description": "Large windowpane checks, 2-3 inch squares",
+          "pattern": "<pattern id='windowpane-large' width='60' height='60' patternUnits='userSpaceOnUse'><rect width='60' height='60' fill='{{baseColor}}'/><rect x='0' y='58' width='60' height='2' fill='{{gridColor}}'/><rect x='58' y='0' width='2' height='60' fill='{{gridColor}}'/></pattern>",
+          "formality": 6
+        },
+        "small": {
+          "description": "Small windowpane checks, 1 inch squares",
+          "pattern": "<pattern id='windowpane-small' width='20' height='20' patternUnits='userSpaceOnUse'><rect width='20' height='20' fill='{{baseColor}}'/><rect x='0' y='18' width='20' height='2' fill='{{gridColor}}'/><rect x='18' y='0' width='2' height='20' fill='{{gridColor}}'/></pattern>",
+          "formality": 8
+        }
+      },
+      "fabricTypes": ["wool", "wool-blend", "tweed"],
+      "maintenance": "medium",
+      "durability": "high"
+    },
+    "herringbone": {
+      "id": "herringbone",
+      "name": "Herringbone",
+      "description": "V-shaped pattern resembling fish bones, sophisticated texture",
+      "formality": 8,
+      "versatility": 7,
+      "occasions": ["business_professional", "creative_professional", "formal_evening"],
+      "seasonality": ["fall", "winter", "spring"],
+      "svg": {
+        "pattern": "<pattern id='herringbone' width='20' height='20' patternUnits='userSpaceOnUse'><rect width='20' height='20' fill='{{baseColor}}'/><polygon points='0,10 10,0 10,2 2,10 0,10' fill='{{accentColor}}'/><polygon points='10,20 20,10 20,10 18,10 10,18' fill='{{accentColor}}'/><polygon points='10,0 20,10 18,10 10,2' fill='{{accentColor}}'/><polygon points='0,10 10,20 2,20 0,12' fill='{{accentColor}}'/></pattern>",
+        "usage": "<rect fill='url(#herringbone)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "accentColor"]
+      },
+      "variants": {
+        "fine": {
+          "description": "Fine herringbone weave, subtle texture",
+          "pattern": "<pattern id='herringbone-fine' width='10' height='10' patternUnits='userSpaceOnUse'><rect width='10' height='10' fill='{{baseColor}}'/><polygon points='0,5 5,0 5,1 1,5 0,5' fill='{{accentColor}}'/><polygon points='5,10 10,5 10,5 9,5 5,9' fill='{{accentColor}}'/></pattern>",
+          "formality": 9
+        },
+        "bold": {
+          "description": "Bold herringbone pattern, more pronounced",
+          "pattern": "<pattern id='herringbone-bold' width='30' height='30' patternUnits='userSpaceOnUse'><rect width='30' height='30' fill='{{baseColor}}'/><polygon points='0,15 15,0 15,3 3,15 0,15' fill='{{accentColor}}'/><polygon points='15,30 30,15 30,15 27,15 15,27' fill='{{accentColor}}'/></pattern>",
+          "formality": 6
+        }
+      },
+      "fabricTypes": ["wool", "tweed", "flannel"],
+      "maintenance": "medium",
+      "durability": "very_high"
+    },
+    "tweed": {
+      "id": "tweed",
+      "name": "Tweed",
+      "description": "Rough, multi-colored woven texture with flecks",
+      "formality": 6,
+      "versatility": 5,
+      "occasions": ["creative_professional", "social_casual"],
+      "seasonality": ["fall", "winter"],
+      "svg": {
+        "pattern": "<pattern id='tweed' width='15' height='15' patternUnits='userSpaceOnUse'><rect width='15' height='15' fill='{{baseColor}}'/><circle cx='3' cy='4' r='0.5' fill='{{fleckColor1}}'/><circle cx='11' cy='2' r='0.8' fill='{{fleckColor2}}'/><circle cx='7' cy='9' r='0.3' fill='{{fleckColor3}}'/><circle cx='13' cy='11' r='0.6' fill='{{fleckColor1}}'/><circle cx='1' cy='12' r='0.4' fill='{{fleckColor2}}'/><circle cx='9' cy='6' r='0.7' fill='{{fleckColor3}}'/></pattern>",
+        "usage": "<rect fill='url(#tweed)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "fleckColor1", "fleckColor2", "fleckColor3"]
+      },
+      "variants": {
+        "harris": {
+          "description": "Traditional Harris tweed with earth tones",
+          "colorPalette": ["#8B4513", "#D2691E", "#F4A460", "#CD853F"],
+          "formality": 7
+        },
+        "donegal": {
+          "description": "Irish Donegal tweed with colorful flecks",
+          "colorPalette": ["#2F4F4F", "#708090", "#4682B4", "#87CEEB"],
+          "formality": 6
+        }
+      },
+      "fabricTypes": ["wool", "harris_tweed", "donegal_tweed"],
+      "maintenance": "high",
+      "durability": "very_high"
+    },
+    "glen_plaid": {
+      "id": "glen_plaid",
+      "name": "Glen Plaid",
+      "description": "Prince of Wales check pattern, sophisticated plaid",
+      "formality": 7,
+      "versatility": 6,
+      "occasions": ["business_professional", "creative_professional"],
+      "seasonality": ["fall", "winter", "spring"],
+      "svg": {
+        "pattern": "<pattern id='glen-plaid' width='32' height='32' patternUnits='userSpaceOnUse'><rect width='32' height='32' fill='{{baseColor}}'/><rect x='0' y='0' width='16' height='16' fill='{{checkColor1}}'/><rect x='16' y='16' width='16' height='16' fill='{{checkColor1}}'/><rect x='14' y='0' width='4' height='32' fill='{{lineColor}}'/><rect x='0' y='14' width='32' height='4' fill='{{lineColor}}'/></pattern>",
+        "usage": "<rect fill='url(#glen-plaid)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "checkColor1", "lineColor"]
+      },
+      "variants": {
+        "traditional": {
+          "description": "Classic black and white glen plaid",
+          "colorScheme": "monochrome",
+          "formality": 8
+        },
+        "colored": {
+          "description": "Colored glen plaid variations",
+          "colorScheme": "complementary",
+          "formality": 6
+        }
+      },
+      "fabricTypes": ["wool", "wool-blend"],
+      "maintenance": "medium",
+      "durability": "high"
+    },
+    "houndstooth": {
+      "id": "houndstooth",
+      "name": "Houndstooth",
+      "description": "Broken check pattern with jagged edges",
+      "formality": 6,
+      "versatility": 5,
+      "occasions": ["creative_professional", "social_casual"],
+      "seasonality": ["fall", "winter"],
+      "svg": {
+        "pattern": "<pattern id='houndstooth' width='16' height='16' patternUnits='userSpaceOnUse'><rect width='16' height='16' fill='{{color1}}'/><polygon points='0,0 8,0 4,4 0,8' fill='{{color2}}'/><polygon points='8,8 16,8 12,12 8,16' fill='{{color2}}'/><polygon points='8,0 16,0 16,8 12,4' fill='{{color2}}'/><polygon points='0,8 8,8 4,12 0,16' fill='{{color2}}'/></pattern>",
+        "usage": "<rect fill='url(#houndstooth)' width='100%' height='100%'/>",
+        "variables": ["color1", "color2"]
+      },
+      "variants": {
+        "large": {
+          "description": "Large houndstooth pattern",
+          "pattern": "<pattern id='houndstooth-large' width='32' height='32' patternUnits='userSpaceOnUse'><rect width='32' height='32' fill='{{color1}}'/><polygon points='0,0 16,0 8,8 0,16' fill='{{color2}}'/><polygon points='16,16 32,16 24,24 16,32' fill='{{color2}}'/></pattern>",
+          "formality": 5
+        },
+        "small": {
+          "description": "Small houndstooth pattern",
+          "pattern": "<pattern id='houndstooth-small' width='8' height='8' patternUnits='userSpaceOnUse'><rect width='8' height='8' fill='{{color1}}'/><polygon points='0,0 4,0 2,2 0,4' fill='{{color2}}'/><polygon points='4,4 8,4 6,6 4,8' fill='{{color2}}'/></pattern>",
+          "formality": 7
+        }
+      },
+      "fabricTypes": ["wool", "wool-blend", "tweed"],
+      "maintenance": "medium",
+      "durability": "high"
+    },
+    "birdseye": {
+      "id": "birdseye",
+      "name": "Bird's Eye",
+      "description": "Small diamond pattern with dots, subtle texture",
+      "formality": 8,
+      "versatility": 8,
+      "occasions": ["business_professional", "formal_evening"],
+      "seasonality": ["all"],
+      "svg": {
+        "pattern": "<pattern id='birdseye' width='8' height='8' patternUnits='userSpaceOnUse'><rect width='8' height='8' fill='{{baseColor}}'/><circle cx='4' cy='4' r='1' fill='{{dotColor}}'/><polygon points='2,4 4,2 6,4 4,6' fill='{{diamondColor}}' opacity='0.3'/></pattern>",
+        "usage": "<rect fill='url(#birdseye)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "dotColor", "diamondColor"]
+      },
+      "variants": {
+        "fine": {
+          "description": "Very fine bird's eye pattern",
+          "pattern": "<pattern id='birdseye-fine' width='4' height='4' patternUnits='userSpaceOnUse'><rect width='4' height='4' fill='{{baseColor}}'/><circle cx='2' cy='2' r='0.5' fill='{{dotColor}}'/></pattern>",
+          "formality": 9
+        }
+      },
+      "fabricTypes": ["wool", "silk", "wool-silk-blend"],
+      "maintenance": "low",
+      "durability": "high"
+    },
+    "sharkskin": {
+      "id": "sharkskin",
+      "name": "Sharkskin",
+      "description": "Smooth texture with subtle sheen, modern finish",
+      "formality": 8,
+      "versatility": 7,
+      "occasions": ["business_professional", "formal_evening"],
+      "seasonality": ["all"],
+      "svg": {
+        "pattern": "<pattern id='sharkskin' width='20' height='20' patternUnits='userSpaceOnUse'><rect width='20' height='20' fill='{{baseColor}}'/><rect x='0' y='0' width='10' height='10' fill='{{shadeColor}}' opacity='0.1'/><rect x='10' y='10' width='10' height='10' fill='{{shadeColor}}' opacity='0.1'/></pattern>",
+        "usage": "<rect fill='url(#sharkskin)' width='100%' height='100%'/>",
+        "variables": ["baseColor", "shadeColor"]
+      },
+      "fabricTypes": ["wool", "mohair-wool-blend", "polyester-wool-blend"],
+      "maintenance": "low",
+      "durability": "medium",
+      "sheen": "moderate"
+    }
+  },
+  "textureCategories": {
+    "classic": {
+      "description": "Traditional, timeless patterns suitable for all occasions",
+      "textures": ["solid", "pinstripe", "herringbone", "birdseye"],
+      "formality": [8, 9, 10],
+      "versatility": [8, 9, 10]
+    },
+    "business": {
+      "description": "Professional patterns ideal for corporate environments",
+      "textures": ["solid", "pinstripe", "birdseye", "sharkskin"],
+      "occasions": ["business_professional", "formal_evening"],
+      "formality": [7, 8, 9, 10]
+    },
+    "casual": {
+      "description": "Relaxed patterns for informal settings",
+      "textures": ["tweed", "houndstooth", "glen_plaid"],
+      "occasions": ["creative_professional", "social_casual"],
+      "formality": [4, 5, 6, 7]
+    },
+    "seasonal": {
+      "fall_winter": {
+        "description": "Heavier textures for cooler weather",
+        "textures": ["tweed", "herringbone", "houndstooth", "glen_plaid"],
+        "seasonality": ["fall", "winter"]
+      },
+      "spring_summer": {
+        "description": "Lighter textures for warmer weather",
+        "textures": ["solid", "sharkskin", "birdseye"],
+        "seasonality": ["spring", "summer"]
+      }
+    }
+  },
+  "renderingGuidelines": {
+    "svgDimensions": {
+      "patternUnit": "userSpaceOnUse",
+      "defaultWidth": 100,
+      "defaultHeight": 100,
+      "scaleFactor": "responsive"
+    },
+    "colorVariables": {
+      "substitution": "{{variableName}}",
+      "required": ["baseColor"],
+      "optional": ["accentColor", "stripeColor", "fleckColor1", "fleckColor2", "fleckColor3"]
+    },
+    "performance": {
+      "maxPatternSize": "50x50",
+      "preferredPatternSize": "20x20",
+      "vectorOptimization": true,
+      "cacheStrategy": "pattern_library"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-20",
+    "textureCount": 9,
+    "categoryCount": 3,
+    "description": "SVG texture patterns for suit visualization and selection"
+  }
+} 

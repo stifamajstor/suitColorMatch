@@ -1,0 +1,386 @@
+{
+  "occasions": {
+    "business_professional": {
+      "name": "Business Professional",
+      "description": "Traditional corporate and business environments",
+      "colors": [
+        {
+          "id": "charcoal_grey",
+          "name": "Charcoal Grey",
+          "hex": "#36454F",
+          "rgb": [54, 68, 79],
+          "hsl": [200, 19, 26],
+          "colorTemperature": "cool",
+          "formality": 9,
+          "versatility": 10,
+          "seasonality": ["all"],
+          "timeOfDay": ["morning", "afternoon", "evening"],
+          "description": "Classic business staple, pairs well with almost any shirt and tie combination"
+        },
+        {
+          "id": "navy_blue",
+          "name": "Navy Blue",
+          "hex": "#1F2937",
+          "rgb": [31, 41, 55],
+          "hsl": [218, 28, 17],
+          "colorTemperature": "cool",
+          "formality": 9,
+          "versatility": 9,
+          "seasonality": ["all"],
+          "timeOfDay": ["morning", "afternoon", "evening"],
+          "description": "Timeless business color, slightly less formal than charcoal but equally versatile"
+        },
+        {
+          "id": "midnight_blue",
+          "name": "Midnight Blue",
+          "hex": "#191970",
+          "rgb": [25, 25, 112],
+          "hsl": [240, 64, 27],
+          "colorTemperature": "cool",
+          "formality": 8,
+          "versatility": 8,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["evening"],
+          "description": "Deep blue for evening business events and formal meetings"
+        },
+        {
+          "id": "anthracite",
+          "name": "Anthracite",
+          "hex": "#2F4F4F",
+          "rgb": [47, 79, 79],
+          "hsl": [180, 26, 25],
+          "colorTemperature": "cool",
+          "formality": 8,
+          "versatility": 7,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Modern charcoal with subtle green undertones"
+        },
+        {
+          "id": "slate_grey",
+          "name": "Slate Grey",
+          "hex": "#708090",
+          "rgb": [112, 128, 144],
+          "hsl": [210, 13, 50],
+          "colorTemperature": "cool",
+          "formality": 7,
+          "versatility": 8,
+          "seasonality": ["spring", "fall"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Lighter grey option for less formal business settings"
+        },
+        {
+          "id": "steel_blue",
+          "name": "Steel Blue",
+          "hex": "#4682B4",
+          "rgb": [70, 130, 180],
+          "hsl": [207, 44, 49],
+          "colorTemperature": "cool",
+          "formality": 6,
+          "versatility": 7,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Professional blue with more personality than navy"
+        }
+      ]
+    },
+    "creative_professional": {
+      "name": "Creative Professional",
+      "description": "Creative industries, design studios, modern workplaces",
+      "colors": [
+        {
+          "id": "forest_green",
+          "name": "Forest Green",
+          "hex": "#355E3B",
+          "rgb": [53, 94, 59],
+          "hsl": [129, 28, 29],
+          "colorTemperature": "cool",
+          "formality": 6,
+          "versatility": 7,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Rich green that conveys growth and creativity"
+        },
+        {
+          "id": "burgundy",
+          "name": "Burgundy",
+          "hex": "#800020",
+          "rgb": [128, 0, 32],
+          "hsl": [345, 100, 25],
+          "colorTemperature": "warm",
+          "formality": 7,
+          "versatility": 6,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["afternoon", "evening"],
+          "description": "Sophisticated red that makes a confident statement"
+        },
+        {
+          "id": "plum",
+          "name": "Plum",
+          "hex": "#8E4585",
+          "rgb": [142, 69, 133],
+          "hsl": [307, 35, 41],
+          "colorTemperature": "cool",
+          "formality": 6,
+          "versatility": 5,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["afternoon", "evening"],
+          "description": "Creative purple that balances professionalism with personality"
+        },
+        {
+          "id": "camel",
+          "name": "Camel",
+          "hex": "#C19A6B",
+          "rgb": [193, 154, 107],
+          "hsl": [33, 41, 59],
+          "colorTemperature": "warm",
+          "formality": 5,
+          "versatility": 6,
+          "seasonality": ["spring", "fall"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Warm tan suitable for creative environments"
+        },
+        {
+          "id": "teal",
+          "name": "Teal",
+          "hex": "#008080",
+          "rgb": [0, 128, 128],
+          "hsl": [180, 100, 25],
+          "colorTemperature": "cool",
+          "formality": 6,
+          "versatility": 6,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Modern blue-green that's both professional and creative"
+        },
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "hex": "#3C2415",
+          "rgb": [60, 36, 21],
+          "hsl": [23, 48, 16],
+          "colorTemperature": "warm",
+          "formality": 7,
+          "versatility": 7,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["morning", "afternoon", "evening"],
+          "description": "Rich brown that's sophisticated yet approachable"
+        },
+        {
+          "id": "dusty_rose",
+          "name": "Dusty Rose",
+          "hex": "#DCAE96",
+          "rgb": [220, 174, 150],
+          "hsl": [21, 48, 73],
+          "colorTemperature": "warm",
+          "formality": 4,
+          "versatility": 5,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Soft pink-beige for relaxed creative settings"
+        }
+      ]
+    },
+    "formal_evening": {
+      "name": "Formal Evening",
+      "description": "Black-tie events, galas, formal dinners",
+      "colors": [
+        {
+          "id": "black",
+          "name": "Black",
+          "hex": "#000000",
+          "rgb": [0, 0, 0],
+          "hsl": [0, 0, 0],
+          "colorTemperature": "neutral",
+          "formality": 10,
+          "versatility": 10,
+          "seasonality": ["all"],
+          "timeOfDay": ["evening"],
+          "description": "The ultimate formal choice for black-tie events"
+        },
+        {
+          "id": "midnight_black",
+          "name": "Midnight Black",
+          "hex": "#0C0C0C",
+          "rgb": [12, 12, 12],
+          "hsl": [0, 0, 5],
+          "colorTemperature": "neutral",
+          "formality": 10,
+          "versatility": 9,
+          "seasonality": ["all"],
+          "timeOfDay": ["evening"],
+          "description": "Slightly softer than pure black, with subtle texture"
+        },
+        {
+          "id": "formal_navy",
+          "name": "Formal Navy",
+          "hex": "#0F1419",
+          "rgb": [15, 20, 25],
+          "hsl": [210, 25, 8],
+          "colorTemperature": "cool",
+          "formality": 9,
+          "versatility": 8,
+          "seasonality": ["all"],
+          "timeOfDay": ["evening"],
+          "description": "Very dark navy for formal evening events"
+        },
+        {
+          "id": "deep_charcoal",
+          "name": "Deep Charcoal",
+          "hex": "#1C1C1C",
+          "rgb": [28, 28, 28],
+          "hsl": [0, 0, 11],
+          "colorTemperature": "neutral",
+          "formality": 9,
+          "versatility": 8,
+          "seasonality": ["all"],
+          "timeOfDay": ["evening"],
+          "description": "Near-black charcoal for sophisticated evening wear"
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "hex": "#FFFFFF",
+          "rgb": [255, 255, 255],
+          "hsl": [0, 0, 100],
+          "colorTemperature": "neutral",
+          "formality": 10,
+          "versatility": 8,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["evening"],
+          "description": "Classic white dinner jacket for summer formal events"
+        },
+        {
+          "id": "ivory",
+          "name": "Ivory",
+          "hex": "#F5F5DC",
+          "rgb": [245, 245, 220],
+          "hsl": [60, 56, 91],
+          "colorTemperature": "warm",
+          "formality": 9,
+          "versatility": 7,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["evening"],
+          "description": "Softer alternative to white for formal summer events"
+        }
+      ]
+    },
+    "social_casual": {
+      "name": "Social/Casual",
+      "description": "Parties, dates, social gatherings, smart casual events",
+      "colors": [
+        {
+          "id": "light_grey",
+          "name": "Light Grey",
+          "hex": "#D3D3D3",
+          "rgb": [211, 211, 211],
+          "hsl": [0, 0, 83],
+          "colorTemperature": "neutral",
+          "formality": 4,
+          "versatility": 8,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Relaxed grey perfect for casual social events"
+        },
+        {
+          "id": "khaki",
+          "name": "Khaki",
+          "hex": "#C3B091",
+          "rgb": [195, 176, 145],
+          "hsl": [37, 30, 67],
+          "colorTemperature": "warm",
+          "formality": 3,
+          "versatility": 7,
+          "seasonality": ["spring", "summer", "fall"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Classic casual color for relaxed social settings"
+        },
+        {
+          "id": "sage_green",
+          "name": "Sage Green",
+          "hex": "#9CAF88",
+          "rgb": [156, 175, 136],
+          "hsl": [89, 19, 61],
+          "colorTemperature": "cool",
+          "formality": 4,
+          "versatility": 6,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Soft green that's both relaxed and sophisticated"
+        },
+        {
+          "id": "powder_blue",
+          "name": "Powder Blue",
+          "hex": "#B0E0E6",
+          "rgb": [176, 224, 230],
+          "hsl": [187, 52, 80],
+          "colorTemperature": "cool",
+          "formality": 3,
+          "versatility": 6,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Light blue perfect for casual summer events"
+        },
+        {
+          "id": "cream",
+          "name": "Cream",
+          "hex": "#F5F5DC",
+          "rgb": [245, 245, 220],
+          "hsl": [60, 56, 91],
+          "colorTemperature": "warm",
+          "formality": 4,
+          "versatility": 7,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Soft neutral for relaxed social occasions"
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender",
+          "hex": "#E6E6FA",
+          "rgb": [230, 230, 250],
+          "hsl": [240, 67, 94],
+          "colorTemperature": "cool",
+          "formality": 3,
+          "versatility": 5,
+          "seasonality": ["spring", "summer"],
+          "timeOfDay": ["morning", "afternoon"],
+          "description": "Soft purple for creative casual events"
+        },
+        {
+          "id": "stone",
+          "name": "Stone",
+          "hex": "#928E85",
+          "rgb": [146, 142, 133],
+          "hsl": [42, 6, 55],
+          "colorTemperature": "neutral",
+          "formality": 5,
+          "versatility": 7,
+          "seasonality": ["fall", "winter"],
+          "timeOfDay": ["morning", "afternoon", "evening"],
+          "description": "Neutral grey-beige that works for many casual occasions"
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "hex": "#B7410E",
+          "rgb": [183, 65, 14],
+          "hsl": [18, 86, 39],
+          "colorTemperature": "warm",
+          "formality": 4,
+          "versatility": 5,
+          "seasonality": ["fall"],
+          "timeOfDay": ["afternoon", "evening"],
+          "description": "Warm orange-brown for autumn social events"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-20",
+    "colorCount": 33,
+    "occasionCount": 4,
+    "description": "Comprehensive suit color database with color theory data for matching algorithms"
+  }
+} 

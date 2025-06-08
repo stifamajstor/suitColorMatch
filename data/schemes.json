@@ -1,0 +1,274 @@
+{
+  "colorSchemes": {
+    "monochromatic": {
+      "name": "Monochromatic",
+      "description": "Colors that share the same hue but vary in saturation and lightness",
+      "algorithm": {
+        "type": "single_hue_variation",
+        "method": "vary_saturation_lightness",
+        "parameters": {
+          "hueVariation": 0,
+          "saturationRange": [15, 85],
+          "lightnessRange": [20, 80],
+          "steps": [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+        }
+      },
+      "harmonies": {
+        "light": {
+          "description": "Lighter variations of the base color",
+          "lightnessMultiplier": [1.2, 1.4, 1.6],
+          "saturationMultiplier": [0.8, 0.6, 0.4]
+        },
+        "dark": {
+          "description": "Darker variations of the base color",
+          "lightnessMultiplier": [0.8, 0.6, 0.4],
+          "saturationMultiplier": [1.1, 1.2, 1.3]
+        },
+        "neutral": {
+          "description": "Desaturated variations maintaining similar lightness",
+          "lightnessMultiplier": [0.9, 1.0, 1.1],
+          "saturationMultiplier": [0.3, 0.5, 0.7]
+        }
+      },
+      "complementaryPairs": {
+        "accent": {
+          "description": "Small amounts of complementary color for accent",
+          "ratio": "90:10",
+          "usage": ["buttons", "highlights", "accessories"]
+        },
+        "split": {
+          "description": "Use split-complementary for more subtle contrast",
+          "hueOffset": [150, 210],
+          "ratio": "85:15"
+        }
+      }
+    },
+    "analogous": {
+      "name": "Analogous",
+      "description": "Colors that are adjacent on the color wheel, typically spanning 30-60 degrees",
+      "algorithm": {
+        "type": "adjacent_hues",
+        "method": "hue_stepping",
+        "parameters": {
+          "hueRange": 60,
+          "stepSize": 15,
+          "maxColors": 5,
+          "dominantColorWeight": 0.6
+        }
+      },
+      "harmonies": {
+        "warm": {
+          "description": "Warm analogous colors (reds, oranges, yellows)",
+          "hueRanges": [
+            {"start": 0, "end": 60, "name": "red-orange-yellow"},
+            {"start": 300, "end": 360, "name": "red-magenta"}
+          ],
+          "temperature": "warm",
+          "seasonality": ["fall", "winter"]
+        },
+        "cool": {
+          "description": "Cool analogous colors (blues, greens, purples)",
+          "hueRanges": [
+            {"start": 120, "end": 240, "name": "green-blue-purple"},
+            {"start": 180, "end": 270, "name": "cyan-blue-violet"}
+          ],
+          "temperature": "cool",
+          "seasonality": ["spring", "summer"]
+        },
+        "neutral": {
+          "description": "Neutral analogous tones",
+          "hueRanges": [
+            {"start": 30, "end": 90, "name": "yellow-green"},
+            {"start": 240, "end": 300, "name": "blue-purple"}
+          ],
+          "temperature": "neutral",
+          "seasonality": ["all"]
+        }
+      },
+      "relationships": {
+        "primary": {
+          "description": "Main color that dominates the palette",
+          "weight": 60,
+          "position": "center"
+        },
+        "secondary": {
+          "description": "Supporting colors that enhance the primary",
+          "weight": 30,
+          "position": "adjacent",
+          "count": 2
+        },
+        "accent": {
+          "description": "Small amounts for visual interest",
+          "weight": 10,
+          "position": "edge",
+          "count": 1
+        }
+      }
+    },
+    "triadic": {
+      "name": "Triadic",
+      "description": "Three colors evenly spaced around the color wheel (120 degrees apart)",
+      "algorithm": {
+        "type": "equidistant_hues",
+        "method": "120_degree_spacing",
+        "parameters": {
+          "separation": 120,
+          "colorCount": 3,
+          "balanceMethod": "equal_saturation"
+        }
+      },
+      "harmonies": {
+        "vibrant": {
+          "description": "High saturation triadic scheme for bold looks",
+          "saturationRange": [60, 90],
+          "lightnessRange": [40, 70],
+          "usage": ["creative", "casual", "statement pieces"]
+        },
+        "muted": {
+          "description": "Lower saturation for professional settings",
+          "saturationRange": [20, 50],
+          "lightnessRange": [30, 60],
+          "usage": ["business", "formal"]
+        },
+        "pastel": {
+          "description": "Light, desaturated triadic colors",
+          "saturationRange": [10, 30],
+          "lightnessRange": [70, 90],
+          "usage": ["spring", "casual", "soft looks"]
+        }
+      },
+      "balance": {
+        "dominant": {
+          "description": "One color dominates, others provide accent",
+          "ratios": [70, 20, 10],
+          "approach": "single_dominant"
+        },
+        "balanced": {
+          "description": "All three colors used in near-equal amounts",
+          "ratios": [40, 30, 30],
+          "approach": "equal_weight"
+        },
+        "split": {
+          "description": "Two colors dominate, third as accent",
+          "ratios": [45, 45, 10],
+          "approach": "dual_dominant"
+        }
+      }
+    },
+    "complementary": {
+      "name": "Complementary",
+      "description": "Colors opposite each other on the color wheel (180 degrees apart)",
+      "algorithm": {
+        "type": "opposite_hues",
+        "method": "180_degree_opposition",
+        "parameters": {
+          "separation": 180,
+          "tolerance": 10,
+          "contrastMethod": "maximum"
+        }
+      },
+      "harmonies": {
+        "high_contrast": {
+          "description": "Maximum contrast for dramatic effect",
+          "saturationRange": [70, 100],
+          "lightnessContrast": "maximum",
+          "usage": ["accents", "call-to-action", "highlights"]
+        },
+        "subtle": {
+          "description": "Toned down complementary for sophistication",
+          "saturationRange": [30, 60],
+          "lightnessContrast": "moderate",
+          "usage": ["business", "elegant"]
+        },
+        "split_complementary": {
+          "description": "Base color plus two colors adjacent to its complement",
+          "hueOffset": [150, 210],
+          "description_detail": "Less jarring than direct complementary"
+        }
+      },
+      "applications": {
+        "accent_only": {
+          "description": "Use complementary color sparingly for accents",
+          "ratio": "85:15",
+          "elements": ["pocket square", "tie details", "cufflinks"]
+        },
+        "seasonal": {
+          "description": "Seasonal complementary combinations",
+          "combinations": [
+            {"primary": "navy", "complement": "orange", "season": "fall"},
+            {"primary": "forest_green", "complement": "burgundy", "season": "winter"},
+            {"primary": "powder_blue", "complement": "coral", "season": "spring"},
+            {"primary": "sage_green", "complement": "dusty_rose", "season": "summer"}
+          ]
+        }
+      }
+    }
+  },
+  "colorWheelMath": {
+    "hueCalculations": {
+      "complementary": {
+        "formula": "(hue + 180) % 360",
+        "description": "Add 180 degrees and wrap around 360"
+      },
+      "triadic": {
+        "formula": "[(hue + 120) % 360, (hue + 240) % 360]",
+        "description": "Add 120 and 240 degrees respectively"
+      },
+      "analogous": {
+        "formula": "[(hue + step) % 360 for step in range(-30, 31, 15)]",
+        "description": "Steps of 15 degrees within ±30 degree range"
+      },
+      "splitComplementary": {
+        "formula": "[(hue + 150) % 360, (hue + 210) % 360]",
+        "description": "±30 degrees from the direct complement"
+      }
+    },
+    "colorConversion": {
+      "hslToRgb": {
+        "description": "Convert HSL values to RGB for display",
+        "implementation": "standard_hsl_rgb_conversion"
+      },
+      "rgbToHex": {
+        "description": "Convert RGB values to hexadecimal color codes",
+        "implementation": "standard_rgb_hex_conversion"
+      },
+      "relativePerceptualLightness": {
+        "description": "Calculate perceptual lightness for accessibility",
+        "formula": "WCAG_relative_luminance"
+      }
+    }
+  },
+  "contextualRules": {
+    "business": {
+      "preferredSchemes": ["monochromatic", "analogous"],
+      "avoidSchemes": ["triadic_vibrant", "high_contrast_complementary"],
+      "maxContrast": 3.5,
+      "saturationLimit": 60
+    },
+    "creative": {
+      "preferredSchemes": ["triadic", "split_complementary", "analogous_warm"],
+      "allowedContrast": "all",
+      "saturationLimit": 90,
+      "experimentalAllowed": true
+    },
+    "formal": {
+      "preferredSchemes": ["monochromatic_dark", "analogous_cool"],
+      "restrictedColors": ["bright", "neon", "fluorescent"],
+      "maxContrast": 2.0,
+      "saturationLimit": 40
+    },
+    "casual": {
+      "preferredSchemes": ["all"],
+      "seasonalAdaptation": true,
+      "personalityExpression": "encouraged",
+      "contrastFlexibility": "high"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-20",
+    "schemeCount": 4,
+    "algorithmCount": 8,
+    "description": "Color theory schemes and mathematical relationships for automated color matching"
+  }
+} 
