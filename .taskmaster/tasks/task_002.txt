@@ -1,0 +1,43 @@
+# Task ID: 2
+# Title: Create Static Data Layer and Color Theory Logic
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Implement static JSON data files for colors, schemes, and textures, plus core color theory algorithms
+# Details:
+Create data/colors.json with 5-10 suit colors per occasion (Business Professional, Creative Professional, Formal Evening, Social/Casual). Create data/schemes.json defining monochromatic, analogous, and triadic color relationships. Create data/textures.json with SVG pattern definitions. Implement composables/useColorTheory.js with algorithms for generating color combinations based on color wheel theory, including functions for monochromatic variations, analogous color selection, and triadic combinations.
+
+# Test Strategy:
+Unit tests for color theory algorithms, validate JSON data structure, test color combination generation for each scheme type with sample inputs
+
+# Subtasks:
+## 1. Create colors.json with occasion-specific color palettes [pending]
+### Dependencies: None
+### Description: Develop a structured JSON file containing 5-10 suit colors for each specified occasion category
+### Details:
+Create data/colors.json with organized color palettes for Business Professional, Creative Professional, Formal Evening, and Social/Casual occasions. Each color should include RGB values, hex codes, and descriptive names. Ensure colors are fashion-appropriate for each context and include sufficient variety within each category.
+
+## 2. Develop schemes.json with color relationship definitions [pending]
+### Dependencies: None
+### Description: Create a JSON file defining monochromatic, analogous, and triadic color relationships
+### Details:
+Create data/schemes.json that defines the mathematical relationships for monochromatic (same hue, different saturation/brightness), analogous (adjacent colors on color wheel), and triadic (three colors equally spaced on color wheel) color schemes. Include parameters for each scheme type such as hue range for analogous colors and spacing angles for triadic combinations.
+
+## 3. Implement textures.json with SVG pattern definitions [pending]
+### Dependencies: None
+### Description: Create a JSON file containing SVG pattern definitions for various fabric textures
+### Details:
+Create data/textures.json with SVG pattern definitions that simulate common fabric textures like tweed, herringbone, pinstripe, and solid. Each texture should include the SVG markup, recommended color applications, and metadata about appropriate occasions for use.
+
+## 4. Implement monochromatic and analogous color algorithms [pending]
+### Dependencies: 2.1, 2.2
+### Description: Develop JavaScript functions for generating monochromatic variations and analogous color selections
+### Details:
+In composables/useColorTheory.js, implement algorithms for: 1) Generating monochromatic variations by adjusting saturation and brightness while maintaining hue, and 2) Creating analogous color combinations by selecting colors with adjacent hues on the color wheel. Use HSL color space for calculations and include parameters for controlling variation intensity.
+
+## 5. Implement triadic combination algorithm and integration [pending]
+### Dependencies: 2.4
+### Description: Develop triadic color selection algorithm and integrate all color theory functions
+### Details:
+Complete composables/useColorTheory.js by implementing the triadic combination algorithm that selects three colors equally spaced (120° apart) on the color wheel. Then integrate all color theory functions into a cohesive API that allows for generating complete color schemes based on a base color and scheme type. Include utility functions for color conversion between RGB, HEX, and HSL formats.
+

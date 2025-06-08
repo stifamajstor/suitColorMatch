@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: Implement Color Scheme Selection Interface
+# Status: pending
+# Dependencies: 5
+# Priority: medium
+# Description: Create scheme selector for monochromatic, analogous, and triadic approaches
+# Details:
+Create components/SchemeSelector.vue with three color scheme options. Each scheme should display clear explanation, visual example, and difficulty/safety indicator. Implement scheme selection that triggers combination generation using color theory algorithms. Add educational tooltips explaining each approach without overwhelming users. Store selected scheme in Pinia state.
+
+# Test Strategy:
+Test scheme selection triggers correct algorithm, verify educational content displays properly, test state persistence and navigation flow

@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Build Suit Color Picker Component
+# Status: pending
+# Dependencies: 4
+# Priority: high
+# Description: Create visual color picker for suit selection with fabric texture preview
+# Details:
+Create components/ColorPicker.vue with visual color swatches filtered by selected occasion. Implement fabric texture preview using SVG patterns from textures.json. Add search/filter functionality by color family. Create components/TextureRenderer.vue for SVG texture pattern rendering. Store selected suit color in Pinia state. Implement responsive grid layout for color options.
+
+# Test Strategy:
+Test color selection updates state correctly, verify texture preview renders properly, test search/filter functionality, validate responsive layout

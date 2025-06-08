@@ -1,0 +1,11 @@
+# Task ID: 10
+# Title: Create Educational Content Pages
+# Status: pending
+# Dependencies: 3, 6
+# Priority: low
+# Description: Build color theory guide and examples showcase using SSG for SEO
+# Details:
+Create pages/guide.vue with educational content about color theory principles in menswear, explaining monochromatic, analogous, and triadic schemes with visual examples. Create pages/examples.vue showcasing popular combinations for different occasions using SuitVisualizer component. Implement SSG for both pages to ensure fast loading and SEO benefits. Add internal linking between educational content and main app.
+
+# Test Strategy:
+Test SSG build for educational pages, verify educational content accuracy, test visual examples render correctly, validate SEO optimization and internal linking

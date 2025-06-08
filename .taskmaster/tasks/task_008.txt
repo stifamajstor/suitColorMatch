@@ -1,0 +1,11 @@
+# Task ID: 8
+# Title: Build Combination Display and Recommendations
+# Status: pending
+# Dependencies: 6, 7
+# Priority: high
+# Description: Create the final combinations view with smart recommendations and confidence indicators
+# Details:
+Create pages/app/combinations.vue displaying generated combinations using SuitVisualizer component. Implement confidence scoring algorithm based on color theory principles and occasion appropriateness. Show default 'safe' option prominently with alternative suggestions. Add warning indicators for risky combinations. Implement side-by-side comparison view. Create recommendation engine that considers user's occasion and selected scheme.
+
+# Test Strategy:
+Test combination generation accuracy, verify confidence scoring algorithm, test visual comparison functionality, validate recommendation quality across different inputs
